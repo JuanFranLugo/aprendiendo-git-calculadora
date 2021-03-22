@@ -6,7 +6,37 @@ export default class View {
 
     createButons() {
 
-        const btn = document.getElementById("suma");
+        const sumaBtn = document.getElementById("suma");
+        const restaBtn = document.getElementById("resta");
+        const mulBtn = document.getElementById("mul");
+        const divBtn = document.getElementById("div");
+        const clearBtn = document.getElementById("clear");
+        sumaBtn.onclick = () => this.setImputNow(sumaBtn.innerHTML);
+
+        restaBtn.onclick = () => this.setImputNow(restaBtn.innerHTML);
+
+        mulBtn.onclick = () => this.setImputNow(mulBtn.innerHTML);
+
+        divBtn.onclick = () => this.setImputNow(divBtn.innerHTML);
+
+        clearBtn.onclick = () => this.clear();
+        
+        // const btn = document.getElementById("suma");
+        // btn.onclick = () => this.setImputNow(btn.innerHTML);
+        // const btn = document.getElementById("suma");
+        // btn.onclick = () => this.setImputNow(btn.innerHTML);
+        // const btn = document.getElementById("suma");
+        // btn.onclick = () => this.setImputNow(btn.innerHTML);
+        // const btn = document.getElementById("suma");
+        // btn.onclick = () => this.setImputNow(btn.innerHTML);
+        // const btn = document.getElementById("suma");
+        // btn.onclick = () => this.setImputNow(btn.innerHTML);
+        // const btn = document.getElementById("suma");
+        // btn.onclick = () => this.setImputNow(btn.innerHTML);
+        // const btn = document.getElementById("suma");
+        // btn.onclick = () => this.setImputNow(btn.innerHTML);
+        // const btn = document.getElementById("suma");
+        // btn.onclick = () => this.setImputNow(btn.innerHTML);
 
         // const butons = document.getElementById("calc-buttons");
 
@@ -15,32 +45,17 @@ export default class View {
         // sumaBtn.innerHTML = "+";
         // butons.appendChild(sumaBtn);
         // sumaBtn.onclick = () => this.setImputNow('+');
-
-        // const restaBtn = document.createElement("button");
-        // restaBtn.classList.add("button", "is-primary", "is-outlined");
-        // restaBtn.innerHTML = "-";
-        // butons.appendChild(restaBtn);
-
-        // const mulBtn = document.createElement("button");
-        // mulBtn.classList.add("button", "is-primary", "is-outlined");
-        // mulBtn.innerHTML = "x";
-        // butons.appendChild(mulBtn);
-
-        // const divBtn = document.createElement("button");
-        // divBtn.classList.add("button", "is-primary", "is-outlined");
-        // divBtn.innerHTML = "/";
-        // butons.appendChild(divBtn);
-        
-        // const resultBtn = document.createElement("button");
-        // resultBtn.classList.add("button", "is-info", "is-outlined");
-        // resultBtn.innerHTML = "=";
-        // butons.appendChild(resultBtn);
         
 
     }
 
     setImputNow(op){
-        document.getElementById("demo").innerHTML += op;
+        console.log("Llegue");
+        this.inputNow.innerHTML += op;
+    }
+
+    clear(){
+        this.inputNow.innerHTML = "";
     }
 
 }
