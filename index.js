@@ -1,7 +1,7 @@
-import Model from './model.js';
-import View from './view.js'
+import Model from "./model.js";
+import View from "./view.js";
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     const view = new View();
     const model = new Model();
 
